@@ -24,6 +24,12 @@ namespace Form_1
         {
             //string connectionString = @"Data Source=DESKTOP-TD5FI3C\SQLEXPRESS;Initial Catalog=Hostel_Mange;Integrated Security=True";
             string connectionString= ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
+
+            //hugrghr
+            
+
+
+
             // SqlConnection conn = new SqlConnection(connectionString);
             //conn.Open();
             //string query = "select * from Hostel_signup ";
