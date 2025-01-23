@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -27,7 +28,8 @@ namespace Form_1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=DESKTOP-TD5FI3C\SQLEXPRESS;Initial Catalog=Hostel_Mange;Integrated Security=True";
+            //string connectionString = @"Data Source=DESKTOP-TD5FI3C\SQLEXPRESS;Initial Catalog=Hostel_Mange;Integrated Security=True";
+            string connectionString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
 
             // Get user inputs
             string username = Usenametxt.Text; // Username or Email field
