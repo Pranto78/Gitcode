@@ -16,5 +16,10 @@ namespace Form_1
         {
             InitializeComponent();
         }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
