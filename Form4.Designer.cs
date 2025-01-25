@@ -44,6 +44,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
+            this.Labelroomexist = new System.Windows.Forms.Label();
+            this.Labelroom = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -135,6 +137,7 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "ADD ROOM";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -211,12 +214,36 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "ALL ROOMS";
             // 
+            // Labelroomexist
+            // 
+            this.Labelroomexist.AutoSize = true;
+            this.Labelroomexist.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Labelroomexist.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Labelroomexist.Location = new System.Drawing.Point(222, 168);
+            this.Labelroomexist.Name = "Labelroomexist";
+            this.Labelroomexist.Size = new System.Drawing.Size(62, 20);
+            this.Labelroomexist.TabIndex = 16;
+            this.Labelroomexist.Text = "setText";
+            // 
+            // Labelroom
+            // 
+            this.Labelroom.AutoSize = true;
+            this.Labelroom.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Labelroom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Labelroom.Location = new System.Drawing.Point(222, 323);
+            this.Labelroom.Name = "Labelroom";
+            this.Labelroom.Size = new System.Drawing.Size(62, 20);
+            this.Labelroom.TabIndex = 17;
+            this.Labelroom.Text = "setText";
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(828, 562);
+            this.Controls.Add(this.Labelroom);
+            this.Controls.Add(this.Labelroomexist);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button4);
@@ -261,5 +288,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label Labelroomexist;
+        private System.Windows.Forms.Label Labelroom;
     }
 }

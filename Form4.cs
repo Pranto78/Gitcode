@@ -32,6 +32,8 @@ namespace Form_1
         private void Form4_Load(object sender, EventArgs e)
         {
             this.Location = new Point(350, 170);
+            Labelroomexist.Visible = false;
+            Labelroom.Visible = false;
 
             Query = "select * from New_Room ";
 
@@ -39,6 +41,50 @@ namespace Form_1
             dataGridView1.DataSource = ds.Tables[0];
 
 
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Query = "select * from New_Room where Room_No =" + textBox1.Text + "";
+            DataSet ds = fn.getData(Query);
+
+            if (ds.Tables[0].Rows.Count==0)
+            {
+
+                String status;
+
+                if(checkBox1.Checked)
+                {
+                    status = "Yes";
+
+                }
+                else
+                {
+                    status = "No";
+                }
+
+                //String book;
+                //if()
+
+                Labelroomexist.Visible = false;
+
+                Query = "insert into New_Room (Room_No,Room_Status,Room_Booked) values (" + textBox1.Text + ",'"+status+ "', 'NO')";
+                fn.setData(Query,"Room Added ");
+                Form4_Load(this, null);
+
+
+
+            }
+            else
+            {
+
+                Labelroomexist.Text = "Room Already Exist ";
+                Labelroomexist.Visible = true;
+
+
+
+            }
 
         }
     }
