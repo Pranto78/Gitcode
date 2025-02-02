@@ -56,5 +56,11 @@ namespace Form_1
             Form4 room = new Form4();
             room.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form5 room2 = new Form5();
+            room2.Show();
+        }
     }
 }
