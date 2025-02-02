@@ -1,6 +1,6 @@
 ﻿namespace Form_1
 {
-    partial class Form8
+    partial class Form9
     {
         /// <summary>
         /// Required designer variable.
@@ -36,33 +36,33 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(37, 93);
+            this.dataGridView1.Location = new System.Drawing.Point(39, 91);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(720, 323);
-            this.dataGridView1.TabIndex = 15;
+            this.dataGridView1.TabIndex = 16;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 41);
+            this.label1.Location = new System.Drawing.Point(34, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(296, 29);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "STUDENTS IN HOSTEL";
+            this.label1.Size = new System.Drawing.Size(272, 29);
+            this.label1.TabIndex = 25;
+            this.label1.Text = " LEAVED STUDENTS ";
             // 
-            // Form8
+            // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Form8";
-            this.Text = "Form8";
+            this.Name = "Form9";
+            this.Text = "Form9";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
