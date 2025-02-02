@@ -85,5 +85,77 @@ namespace Form_1
             }
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Query = "select * from New_Room where Room_No =" + textBox2.Text + "";
+            DataSet ds = fn.getData(Query);
+
+            if (ds.Tables[0].Rows.Count==0)
+            {
+
+                Labelroom.Text = "No Room Exist";
+                Labelroom.Visible = true;
+                checkBox2.Checked = false;
+
+            }
+            else
+            {
+
+                Labelroom.Text = "Room Found";
+                Labelroom.Visible = true;
+
+                if (ds.Tables[0].Rows[0][1].ToString()=="Yes")
+                {
+                    checkBox2.Checked = true;
+
+
+                }
+                else
+                {
+                    checkBox2.Checked = false;
+                }
+
+
+            }
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            String status;
+
+            if(checkBox2.Checked)
+            {
+                status = "Yes";
+            }
+            else
+            {
+                status = "No";
+
+            }
+            Query = "update New_Room set Room_Status='" + status + "' where Room_No="+ textBox2.Text+ " ";
+            fn.setData(Query,"Details Updated");
+            Form4_Load(this, null);
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if(Labelroom.Text=="Room Found")
+            {
+                Query = "delete from New_Room where Room_No= " + textBox2.Text + "";
+                fn.setData(Query, "Room Details Deleted");
+                Form4_Load(this, null);
+
+
+
+            }
+            else
+            {
+                MessageBox.Show("Trying to Delete which dosen't Exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+        }
     }
 }
