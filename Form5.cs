@@ -19,6 +19,11 @@ namespace Form_1
 
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
+            
+        }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
             this.Location = new Point(500, 200);
         }
     }
