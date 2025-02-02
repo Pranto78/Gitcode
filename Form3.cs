@@ -62,5 +62,10 @@ namespace Form_1
             Form5 room2 = new Form5();
             room2.Show();
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

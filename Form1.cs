@@ -96,8 +96,9 @@ namespace Form_1
 
         }
 
-        
+        private void Usenametxt_TextChanged(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }
