@@ -107,7 +107,7 @@
             this.label1.Location = new System.Drawing.Point(100, 42);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(242, 31);
+            this.label1.Size = new System.Drawing.Size(185, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "NAVIGATION BAR";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -158,6 +158,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "Update / Delete Student";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
