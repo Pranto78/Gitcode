@@ -73,5 +73,16 @@ namespace Form_1
             Form6 room3= new Form6();
             room3.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form8 asl = new Form8();
+            asl.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
