@@ -82,7 +82,8 @@ namespace Form_1
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            Form7 ask = new Form7();
+            ask.Show();
         }
     }
 }

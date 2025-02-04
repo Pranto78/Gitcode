@@ -75,5 +75,43 @@ namespace Form_1
 
 
         }
+
+        private void btnPay_Click(object sender, EventArgs e)
+        {
+            if(txtMobile.Text != "" && txtAmount.Text != "")
+            {
+                query ="select * from fees where mobileNo = "+Int64.Parse(txtMobile.Text)+" and fmonth ='"+dateTimePicker1.Text+"'";
+                DataSet ds = fn.getData(query);
+                if (ds.Tables[0].Rows.Count== 0)
+                {
+                    Int64 mobile =Int64.Parse(txtMobile.Text);
+                    string month = dateTimePicker1.Text;
+                    Int64 amount = Int64.Parse(txtAmount.Text);
+                    query = "insert into fees value(" + mobile + ",'"+month+"',"+amount+")";
+                    fn.setData(query, "Fees paid.");
+
+                }
+                else
+                {
+                    MessageBox.Show("No dues off" + dateTimePicker1.Text + " Left ", "Information ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            clearAll();
+
+        }
+
+        public void clearAll()
+        {
+            txtMobile.Clear();
+            txtName.Clear();
+            txtAmount.Clear();  
+            txtRoomNo.Clear();
+            txtEmailId.Clear();
+            dataGridView1.DataSource = 0;
+        }
     }
 }
