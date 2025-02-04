@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,9 @@ namespace Form_1
 {
     public partial class Form7 : Form
     {
+
+        function fn = new function();
+        string query;
         public Form7()
         {
             InitializeComponent();
@@ -19,6 +23,56 @@ namespace Form_1
 
         private void Form7_Load(object sender, EventArgs e)
         {
+
+            this.Location = new Point(350, 170);
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.CustomFormat = "MMMM yyyy";
+
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (txtMobile.Text != " ")
+            {
+                query = "select name ,email,Room_No from newStudent where mobile = " + txtMobile.Text + "";
+                DataSet ds = fn.getData(query);
+                if (ds.Tables[0].Rows.Count != 0)
+                {
+                    txtName.Text = ds.Tables[0].Rows[0][0].ToString();
+                    txtEmailId.Text = ds.Tables[0].Rows[0][1].ToString();
+                    txtRoomNo.Text = ds.Tables[0].Rows[0][2].ToString();
+                    setDataGrid(Int64.Parse(txtMobile.Text));
+                }
+                else
+                {
+                    MessageBox.Show("No Record Exist ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+
+        }
+
+
+        public void setDataGrid(Int64 mobile)
+        {
+            query = "select * from fees where mobileNo = " + mobile + "";
+            DataSet ds = fn.getData(query);
+            dataGridView1.DataSource = ds.Tables[0];
+
+
+        }
+        private void txtRoomNo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+
+
+
+
 
         }
     }
