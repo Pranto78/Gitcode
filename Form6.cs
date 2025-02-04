@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -87,14 +88,20 @@ namespace Form_1
             Int64 roomNo = Int64.Parse(txtRoomNo.Text);
             String livingStatus = comboBoxLiving.Text;
 
-            query = "update newStudent set name ='" + name + "',fname ='" + fname + "',mname ='" + mname + "',email ='" + email + "',paddress ='" + paddress + "',college ='" + college + "',idproof ='" + idproof + "',roomno =" + roomNo + ",living ='" + livingStatus + "'where mobile = " + mobile + " update roomes set Booked = '" +livingStatus+"' where roomNo="+roomNo+" ";
+            query = "update newStudent set name ='" + name + "',fname ='" + fname + "',mname ='" + mname + "',email ='" + email + "',paddress ='" + paddress + "',college ='" + college + "',idproof ='" + idproof + "',Room_No =" + roomNo + ",living ='" + livingStatus + "'where mobile = " + mobile + " update New_Room set Room_Booked = '" +livingStatus+"' where Room_No="+roomNo+" ";
             fn.setData(query ,  "Data Updation Successful");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            query = "select * from newStudent where mobile" + txtMobile.Text + "";
-             DataSet ds=fn.getData(query);
+            
+
+            // Define the SQL query with a parameter placeholder
+            query = "select * from newStudent where mobile=" + txtMobile.Text + "";
+
+            // Use the `fn.getData` method to execute the query (assuming `fn.getData` supports parameters)
+           
+            DataSet ds=fn.getData(query);
 
             if (ds.Tables[0].Rows.Count != 0)
             {
