@@ -87,7 +87,7 @@ namespace Form_1
                     Int64 mobile =Int64.Parse(txtMobile.Text);
                     string month = dateTimePicker1.Text;
                     Int64 amount = Int64.Parse(txtAmount.Text);
-                    query = "insert into fees value(" + mobile + ",'"+month+"',"+amount+")";
+                    query = "insert into fees values(" + mobile + ",'"+month+"',"+amount+")";
                     fn.setData(query, "Fees paid.");
 
                 }
