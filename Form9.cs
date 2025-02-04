@@ -12,9 +12,26 @@ namespace Form_1
 {
     public partial class Form9 : Form
     {
+        function fn = new function();
+        string query;
+
+
         public Form9()
         {
             InitializeComponent();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Form9_Load(object sender, EventArgs e)
+        {
+            this.Location = new Point(350, 170);
+            query = "select * from newStudent where living ='No'";
+            DataSet ds = fn.getData(query);
+            dataGridView1.DataSource= ds .Tables[0];
         }
     }
 }
