@@ -1,4 +1,6 @@
-﻿namespace Form_1
+﻿using System;
+
+namespace Form_1
 {
     partial class Form6
     {
@@ -37,21 +39,21 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.txtMobile = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtFather = new System.Windows.Forms.TextBox();
+            this.txtMother = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtPermanent = new System.Windows.Forms.TextBox();
+            this.txtCollege = new System.Windows.Forms.TextBox();
+            this.txtIdproof = new System.Windows.Forms.TextBox();
+            this.txtRoomNo = new System.Windows.Forms.TextBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxLiving = new System.Windows.Forms.ComboBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -110,9 +112,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(28, 223);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(189, 16);
+            this.label6.Size = new System.Drawing.Size(179, 16);
             this.label6.TabIndex = 6;
-            this.label6.Text = "PERMANENET ADDRESS";
+            this.label6.Text = "PERMANENT ADDRESS";
             // 
             // label7
             // 
@@ -144,112 +146,107 @@
             this.label9.TabIndex = 9;
             this.label9.Text = "ROOM NUMBER";
             // 
-            // textBox1
+            // txtMobile
             // 
-            this.textBox1.Location = new System.Drawing.Point(233, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(235, 22);
-            this.textBox1.TabIndex = 10;
+            this.txtMobile.Location = new System.Drawing.Point(233, 30);
+            this.txtMobile.Name = "txtMobile";
+            this.txtMobile.Size = new System.Drawing.Size(235, 22);
+            this.txtMobile.TabIndex = 10;
             // 
-            // textBox2
+            // txtName
             // 
-            this.textBox2.Location = new System.Drawing.Point(233, 65);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(383, 22);
-            this.textBox2.TabIndex = 11;
+            this.txtName.Location = new System.Drawing.Point(233, 65);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(383, 22);
+            this.txtName.TabIndex = 11;
             // 
-            // textBox3
+            // txtFather
             // 
-            this.textBox3.Location = new System.Drawing.Point(233, 102);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(383, 22);
-            this.textBox3.TabIndex = 12;
+            this.txtFather.Location = new System.Drawing.Point(233, 102);
+            this.txtFather.Name = "txtFather";
+            this.txtFather.Size = new System.Drawing.Size(383, 22);
+            this.txtFather.TabIndex = 12;
+            this.txtFather.TextChanged += new System.EventHandler(this.txtFather_TextChanged);
             // 
-            // textBox4
+            // txtMother
             // 
-            this.textBox4.Location = new System.Drawing.Point(233, 140);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(383, 22);
-            this.textBox4.TabIndex = 13;
+            this.txtMother.Location = new System.Drawing.Point(233, 140);
+            this.txtMother.Name = "txtMother";
+            this.txtMother.Size = new System.Drawing.Size(383, 22);
+            this.txtMother.TabIndex = 13;
+            this.txtMother.TextChanged += new System.EventHandler(this.txtMother_TextChanged);
             // 
-            // textBox5
+            // txtEmail
             // 
-            this.textBox5.Location = new System.Drawing.Point(233, 176);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(383, 22);
-            this.textBox5.TabIndex = 14;
+            this.txtEmail.Location = new System.Drawing.Point(233, 176);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(383, 22);
+            this.txtEmail.TabIndex = 14;
             // 
-            // textBox6
+            // txtPermanent
             // 
-            this.textBox6.Location = new System.Drawing.Point(233, 217);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(383, 22);
-            this.textBox6.TabIndex = 15;
+            this.txtPermanent.Location = new System.Drawing.Point(233, 217);
+            this.txtPermanent.Name = "txtPermanent";
+            this.txtPermanent.Size = new System.Drawing.Size(383, 22);
+            this.txtPermanent.TabIndex = 15;
             // 
-            // textBox7
+            // txtCollege
             // 
-            this.textBox7.Location = new System.Drawing.Point(233, 254);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(383, 22);
-            this.textBox7.TabIndex = 16;
+            this.txtCollege.Location = new System.Drawing.Point(233, 254);
+            this.txtCollege.Name = "txtCollege";
+            this.txtCollege.Size = new System.Drawing.Size(383, 22);
+            this.txtCollege.TabIndex = 16;
             // 
-            // textBox8
+            // txtIdproof
             // 
-            this.textBox8.Location = new System.Drawing.Point(233, 290);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(383, 22);
-            this.textBox8.TabIndex = 17;
+            this.txtIdproof.Location = new System.Drawing.Point(233, 290);
+            this.txtIdproof.Name = "txtIdproof";
+            this.txtIdproof.Size = new System.Drawing.Size(383, 22);
+            this.txtIdproof.TabIndex = 17;
+            this.txtIdproof.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
-            // textBox9
+            // txtRoomNo
             // 
-            this.textBox9.Location = new System.Drawing.Point(233, 328);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(383, 22);
-            this.textBox9.TabIndex = 18;
+            this.txtRoomNo.Location = new System.Drawing.Point(233, 328);
+            this.txtRoomNo.Name = "txtRoomNo";
+            this.txtRoomNo.Size = new System.Drawing.Size(383, 22);
+            this.txtRoomNo.TabIndex = 18;
             // 
-            // button1
+            // btnUpdate
             // 
-            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(487, 23);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 30);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "SEARCH";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnUpdate.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Location = new System.Drawing.Point(233, 408);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(118, 30);
+            this.btnUpdate.TabIndex = 20;
+            this.btnUpdate.Text = "UPDATE";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // button2
+            // btnDelete
             // 
-            this.button2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(233, 408);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(118, 30);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "UPDATE";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnDelete.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(391, 408);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(118, 30);
+            this.btnDelete.TabIndex = 21;
+            this.btnDelete.Text = "DELETE";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // button3
+            // btnClear
             // 
-            this.button3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(391, 408);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(118, 30);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "DELETE";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(543, 408);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(118, 30);
-            this.button4.TabIndex = 22;
-            this.button4.Text = "CLEAR";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnClear.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(543, 408);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(118, 30);
+            this.btnClear.TabIndex = 22;
+            this.btnClear.Text = "CLEAR";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click_1);
             // 
             // label10
             // 
@@ -261,13 +258,28 @@
             this.label10.TabIndex = 23;
             this.label10.Text = "LIVING STATUS";
             // 
-            // comboBox1
+            // comboBoxLiving
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(230, 366);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(386, 24);
-            this.comboBox1.TabIndex = 24;
+            this.comboBoxLiving.FormattingEnabled = true;
+            this.comboBoxLiving.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.comboBoxLiving.Location = new System.Drawing.Point(230, 366);
+            this.comboBoxLiving.Name = "comboBoxLiving";
+            this.comboBoxLiving.Size = new System.Drawing.Size(386, 24);
+            this.comboBoxLiving.TabIndex = 24;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(483, 23);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(118, 30);
+            this.btnSearch.TabIndex = 25;
+            this.btnSearch.Text = "SEARCH";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form6
             // 
@@ -275,21 +287,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.comboBoxLiving);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.txtRoomNo);
+            this.Controls.Add(this.txtIdproof);
+            this.Controls.Add(this.txtCollege);
+            this.Controls.Add(this.txtPermanent);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtMother);
+            this.Controls.Add(this.txtFather);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.txtMobile);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -307,6 +319,11 @@
 
         }
 
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+           
+        }
+
         #endregion
 
         private System.Windows.Forms.Label label1;
@@ -318,20 +335,20 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox txtMobile;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtFather;
+        private System.Windows.Forms.TextBox txtMother;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtPermanent;
+        private System.Windows.Forms.TextBox txtCollege;
+        private System.Windows.Forms.TextBox txtIdproof;
+        private System.Windows.Forms.TextBox txtRoomNo;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxLiving;
+        private System.Windows.Forms.Button btnSearch;
     }
 }

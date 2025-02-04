@@ -70,7 +70,8 @@ namespace Form_1
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Form6 room3= new Form6();
+            room3.Show();
         }
     }
 }
