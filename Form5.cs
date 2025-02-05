@@ -66,7 +66,7 @@ namespace Form_1
                 String id = txtId.Text;
                 Int64 room = Int64.Parse(cmbBoxRoomNumber.Text);
 
-                query = "insert into newStudent  (mobile,name,fname,mname,email,paddress,college,idproof,roomNo) values (" + mobile + ",'" + name + "','" + father + "', '" + mother + "', '" + email + "', '" + permanent + "', '" + college + "', '" + id + "', " + room + ")  update New_Room set Room_Booked = 'Yes' where Room_No = " + room + "";
+                query = "insert into newStudent  (mobile,name,fname,mname,email,paddress,college,idproof,Room_No) values (" + mobile + ",'" + name + "','" + father + "', '" + mother + "', '" + email + "', '" + permanent + "', '" + college + "', '" + id + "', " + room + ")  update New_Room set Room_Booked = 'Yes' where Room_No = " + room + "";
                 fn.setData(query, "Student Registration Successful");
                 clearAll();
             }
