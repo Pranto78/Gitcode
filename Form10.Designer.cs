@@ -32,7 +32,7 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtFather = new System.Windows.Forms.TextBox();
             this.txtMother = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtEmailId = new System.Windows.Forms.TextBox();
             this.txtPermanent = new System.Windows.Forms.TextBox();
             this.txtUniqueId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -52,49 +52,50 @@
             // 
             // txtMobile
             // 
-            this.txtMobile.Location = new System.Drawing.Point(236, 55);
+            this.txtMobile.Location = new System.Drawing.Point(271, 55);
             this.txtMobile.Name = "txtMobile";
             this.txtMobile.Size = new System.Drawing.Size(483, 22);
             this.txtMobile.TabIndex = 12;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(236, 103);
+            this.txtName.Location = new System.Drawing.Point(271, 103);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(483, 22);
             this.txtName.TabIndex = 13;
             // 
             // txtFather
             // 
-            this.txtFather.Location = new System.Drawing.Point(236, 144);
+            this.txtFather.Location = new System.Drawing.Point(271, 147);
             this.txtFather.Name = "txtFather";
             this.txtFather.Size = new System.Drawing.Size(483, 22);
             this.txtFather.TabIndex = 14;
             // 
             // txtMother
             // 
-            this.txtMother.Location = new System.Drawing.Point(236, 183);
+            this.txtMother.Location = new System.Drawing.Point(271, 183);
             this.txtMother.Name = "txtMother";
             this.txtMother.Size = new System.Drawing.Size(483, 22);
             this.txtMother.TabIndex = 15;
             // 
-            // txtEmail
+            // txtEmailId
             // 
-            this.txtEmail.Location = new System.Drawing.Point(236, 230);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(483, 22);
-            this.txtEmail.TabIndex = 16;
+            this.txtEmailId.Location = new System.Drawing.Point(271, 230);
+            this.txtEmailId.Name = "txtEmailId";
+            this.txtEmailId.Size = new System.Drawing.Size(483, 22);
+            this.txtEmailId.TabIndex = 16;
             // 
             // txtPermanent
             // 
-            this.txtPermanent.Location = new System.Drawing.Point(236, 274);
+            this.txtPermanent.Location = new System.Drawing.Point(271, 274);
             this.txtPermanent.Name = "txtPermanent";
             this.txtPermanent.Size = new System.Drawing.Size(483, 22);
             this.txtPermanent.TabIndex = 17;
+            this.txtPermanent.TextChanged += new System.EventHandler(this.txtPermanent_TextChanged);
             // 
             // txtUniqueId
             // 
-            this.txtUniqueId.Location = new System.Drawing.Point(236, 316);
+            this.txtUniqueId.Location = new System.Drawing.Point(271, 316);
             this.txtUniqueId.Name = "txtUniqueId";
             this.txtUniqueId.Size = new System.Drawing.Size(483, 22);
             this.txtUniqueId.TabIndex = 18;
@@ -197,7 +198,7 @@
             "Cleaning Staff",
             "Mess Staff",
             "Acounts manager"});
-            this.txtDesignation.Location = new System.Drawing.Point(236, 357);
+            this.txtDesignation.Location = new System.Drawing.Point(271, 357);
             this.txtDesignation.Name = "txtDesignation";
             this.txtDesignation.Size = new System.Drawing.Size(483, 24);
             this.txtDesignation.TabIndex = 33;
@@ -256,7 +257,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtUniqueId);
             this.Controls.Add(this.txtPermanent);
-            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtEmailId);
             this.Controls.Add(this.txtMother);
             this.Controls.Add(this.txtFather);
             this.Controls.Add(this.txtName);
@@ -275,7 +276,7 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtFather;
         private System.Windows.Forms.TextBox txtMother;
-        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtEmailId;
         private System.Windows.Forms.TextBox txtPermanent;
         private System.Windows.Forms.TextBox txtUniqueId;
         private System.Windows.Forms.Label label1;
