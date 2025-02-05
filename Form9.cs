@@ -13,7 +13,7 @@ namespace Form_1
     public partial class Form9 : Form
     {
         function fn = new function();
-        string query;
+        String query;
 
 
         public Form9()
