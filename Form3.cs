@@ -103,5 +103,17 @@ namespace Form_1
             Form11 ab = new Form11();   
             ab.Show();
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Form13 room13 = new Form13();
+            room13.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Form14 room14 = new Form14();
+            room14.Show();
+        }
     }
 }

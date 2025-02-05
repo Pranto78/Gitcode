@@ -12,9 +12,21 @@ namespace Form_1
 {
     public partial class Form13 : Form
     {
+
+        function fn = new function();
+        String query;
         public Form13()
         {
             InitializeComponent();
+        }
+
+        private void Form13_Load(object sender, EventArgs e)
+        {
+            this.Location = new Point(350, 170);
+            query = "select * from newEmployee where working = 'Yes'";
+            DataSet ds = fn.getData(query);
+            dataGridView1.DataSource = ds.Tables[0];
+
         }
     }
 }
