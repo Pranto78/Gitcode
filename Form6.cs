@@ -23,7 +23,7 @@ namespace Form_1
 
         private void Form6_Load(object sender, EventArgs e)
         {
-            this.Location = new Point(350, 200);
+            this.Location = new Point(650, 280);
         }
 
         private void btnClear_Click(object sender, EventArgs e)

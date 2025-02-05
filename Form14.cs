@@ -30,7 +30,7 @@ namespace Form_1
         {
 
 
-            this.Location = new Point(350, 170);
+            this.Location = new Point(650, 280);
             query = "select * from newEmployee where working = 'No'";
             DataSet ds = fn.getData(query);
             dataGridView1.DataSource = ds.Tables[0];

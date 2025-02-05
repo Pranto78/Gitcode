@@ -24,7 +24,7 @@ namespace Form_1
         private void Form7_Load(object sender, EventArgs e)
         {
 
-            this.Location = new Point(350, 170);
+            this.Location = new Point(650, 280);
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
             dateTimePicker1.CustomFormat = "MMMM yyyy";
 

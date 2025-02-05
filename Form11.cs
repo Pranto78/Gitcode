@@ -23,7 +23,7 @@ namespace Form_1
 
         private void Form11_Load(object sender, EventArgs e)
         {
-            this.Location = new Point(350, 170);
+            this.Location = new Point(650, 280);
 
 
         }

@@ -31,7 +31,7 @@ namespace Form_1
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            this.Location = new Point(350,200);
+            this.Location = new Point(650,280);
 
             Query = "select * from New_Room ";
 

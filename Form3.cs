@@ -27,7 +27,9 @@ namespace Form_1
 
         private void Closebtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Form1 back = new Form1();
+            back.Show();
+            this.Hide();
         }
 
         private void button9_Click(object sender, EventArgs e)

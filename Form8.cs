@@ -21,7 +21,7 @@ namespace Form_1
 
         private void Form8_Load(object sender, EventArgs e)
         {
-            this.Location = new Point(350, 200);
+            this.Location = new Point(650, 280);
             query = "select * from newStudent where living = 'Yes'";
             DataSet ds = fn.getData(query);
             dataGridView1.DataSource = ds.Tables[0];

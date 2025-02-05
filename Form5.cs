@@ -21,7 +21,7 @@ namespace Form_1
 
         private void Form5_Load(object sender, EventArgs e)
         {
-            this.Location = new Point(350, 200);
+            this.Location = new Point(650, 280);
             query = "select Room_No from New_Room where Room_Status = 'Yes' and Room_Booked = 'No'";
             DataSet ds = fn.getData(query);
 

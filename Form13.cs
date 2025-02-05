@@ -22,7 +22,7 @@ namespace Form_1
 
         private void Form13_Load(object sender, EventArgs e)
         {
-            this.Location = new Point(350, 170);
+            this.Location = new Point(650, 280);
             query = "select * from newEmployee where working = 'Yes'";
             DataSet ds = fn.getData(query);
             dataGridView1.DataSource = ds.Tables[0];
