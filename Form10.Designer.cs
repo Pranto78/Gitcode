@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtMobile = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtFather = new System.Windows.Forms.TextBox();
+            this.txtMother = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtPermanent = new System.Windows.Forms.TextBox();
+            this.txtUniqueId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,60 +44,60 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtDesignation = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtMobile
             // 
-            this.textBox1.Location = new System.Drawing.Point(236, 55);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(483, 22);
-            this.textBox1.TabIndex = 12;
+            this.txtMobile.Location = new System.Drawing.Point(236, 55);
+            this.txtMobile.Name = "txtMobile";
+            this.txtMobile.Size = new System.Drawing.Size(483, 22);
+            this.txtMobile.TabIndex = 12;
             // 
-            // textBox2
+            // txtName
             // 
-            this.textBox2.Location = new System.Drawing.Point(236, 103);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(483, 22);
-            this.textBox2.TabIndex = 13;
+            this.txtName.Location = new System.Drawing.Point(236, 103);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(483, 22);
+            this.txtName.TabIndex = 13;
             // 
-            // textBox3
+            // txtFather
             // 
-            this.textBox3.Location = new System.Drawing.Point(236, 144);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(483, 22);
-            this.textBox3.TabIndex = 14;
+            this.txtFather.Location = new System.Drawing.Point(236, 144);
+            this.txtFather.Name = "txtFather";
+            this.txtFather.Size = new System.Drawing.Size(483, 22);
+            this.txtFather.TabIndex = 14;
             // 
-            // textBox4
+            // txtMother
             // 
-            this.textBox4.Location = new System.Drawing.Point(236, 183);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(483, 22);
-            this.textBox4.TabIndex = 15;
+            this.txtMother.Location = new System.Drawing.Point(236, 183);
+            this.txtMother.Name = "txtMother";
+            this.txtMother.Size = new System.Drawing.Size(483, 22);
+            this.txtMother.TabIndex = 15;
             // 
-            // textBox5
+            // txtEmail
             // 
-            this.textBox5.Location = new System.Drawing.Point(236, 230);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(483, 22);
-            this.textBox5.TabIndex = 16;
+            this.txtEmail.Location = new System.Drawing.Point(236, 230);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(483, 22);
+            this.txtEmail.TabIndex = 16;
             // 
-            // textBox6
+            // txtPermanent
             // 
-            this.textBox6.Location = new System.Drawing.Point(236, 274);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(483, 22);
-            this.textBox6.TabIndex = 17;
+            this.txtPermanent.Location = new System.Drawing.Point(236, 274);
+            this.txtPermanent.Name = "txtPermanent";
+            this.txtPermanent.Size = new System.Drawing.Size(483, 22);
+            this.txtPermanent.TabIndex = 17;
             // 
-            // textBox7
+            // txtUniqueId
             // 
-            this.textBox7.Location = new System.Drawing.Point(236, 316);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(483, 22);
-            this.textBox7.TabIndex = 18;
+            this.txtUniqueId.Location = new System.Drawing.Point(236, 316);
+            this.txtUniqueId.Name = "txtUniqueId";
+            this.txtUniqueId.Size = new System.Drawing.Size(483, 22);
+            this.txtUniqueId.TabIndex = 18;
             // 
             // label1
             // 
@@ -189,13 +189,18 @@
             this.label9.TabIndex = 32;
             this.label9.Text = "DESIGNATION";
             // 
-            // comboBox1
+            // txtDesignation
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(236, 357);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(483, 24);
-            this.comboBox1.TabIndex = 33;
+            this.txtDesignation.FormattingEnabled = true;
+            this.txtDesignation.Items.AddRange(new object[] {
+            "Hostel Incharge ",
+            "Cleaning Staff",
+            "Mess Staff",
+            "Acounts manager"});
+            this.txtDesignation.Location = new System.Drawing.Point(236, 357);
+            this.txtDesignation.Name = "txtDesignation";
+            this.txtDesignation.Size = new System.Drawing.Size(483, 24);
+            this.txtDesignation.TabIndex = 33;
             // 
             // label10
             // 
@@ -206,28 +211,29 @@
             this.label10.Size = new System.Drawing.Size(0, 16);
             this.label10.TabIndex = 34;
             // 
-            // button1
+            // btnSave
             // 
-            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(338, 387);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 30);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "SAVE";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSave.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(338, 387);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(118, 30);
+            this.btnSave.TabIndex = 35;
+            this.btnSave.Text = "SAVE";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // button2
+            // btnClear
             // 
-            this.button2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(499, 387);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(118, 30);
-            this.button2.TabIndex = 36;
-            this.button2.Text = "CLEAR";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnClear.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(499, 387);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(118, 30);
+            this.btnClear.TabIndex = 36;
+            this.btnClear.Text = "CLEAR";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form10
             // 
@@ -235,10 +241,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txtDesignation);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -248,15 +254,16 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtUniqueId);
+            this.Controls.Add(this.txtPermanent);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtMother);
+            this.Controls.Add(this.txtFather);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.txtMobile);
             this.Name = "Form10";
             this.Text = "Form10";
+            this.Load += new System.EventHandler(this.Form10_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -264,13 +271,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtMobile;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtFather;
+        private System.Windows.Forms.TextBox txtMother;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtPermanent;
+        private System.Windows.Forms.TextBox txtUniqueId;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -280,9 +287,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox txtDesignation;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnClear;
     }
 }

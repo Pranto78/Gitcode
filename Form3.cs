@@ -91,5 +91,17 @@ namespace Form_1
             Form9 abc = new Form9();
             abc.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Form10 ac = new Form10();   
+            ac.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Form11 ab = new Form11();   
+            ab.Show();
+        }
     }
 }

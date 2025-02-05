@@ -21,5 +21,22 @@ namespace Form_1
         {
 
         }
+
+        private void Form10_Load(object sender, EventArgs e)
+        {
+            this.Location = new Point(350, 170);
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if(txtName.Text != " ")
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("Fill all Required Data", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }

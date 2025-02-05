@@ -37,19 +37,19 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.txtMobile = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtFather = new System.Windows.Forms.TextBox();
+            this.txtMother = new System.Windows.Forms.TextBox();
+            this.txtEmailId = new System.Windows.Forms.TextBox();
+            this.txtPermanent = new System.Windows.Forms.TextBox();
+            this.txtUnique = new System.Windows.Forms.TextBox();
+            this.txtDesignation = new System.Windows.Forms.ComboBox();
+            this.txtWorking = new System.Windows.Forms.ComboBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -61,7 +61,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(30, 62);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(164, 20);
+            this.label2.Size = new System.Drawing.Size(131, 16);
             this.label2.TabIndex = 26;
             this.label2.Text = "MOBILE NUMBER";
             // 
@@ -72,7 +72,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(30, 107);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 20);
+            this.label1.Size = new System.Drawing.Size(50, 16);
             this.label1.TabIndex = 27;
             this.label1.Text = "NAME";
             // 
@@ -83,7 +83,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(30, 148);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 20);
+            this.label3.Size = new System.Drawing.Size(119, 16);
             this.label3.TabIndex = 28;
             this.label3.Text = "FATHER NAME ";
             // 
@@ -94,7 +94,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(30, 189);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 20);
+            this.label4.Size = new System.Drawing.Size(119, 16);
             this.label4.TabIndex = 29;
             this.label4.Text = "MOTHER NAME";
             // 
@@ -105,7 +105,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(30, 234);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 20);
+            this.label5.Size = new System.Drawing.Size(70, 16);
             this.label5.TabIndex = 30;
             this.label5.Text = "EMAIL ID";
             // 
@@ -116,7 +116,7 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(30, 277);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(217, 20);
+            this.label6.Size = new System.Drawing.Size(179, 16);
             this.label6.TabIndex = 31;
             this.label6.Text = "PERMANENT ADDRESS";
             // 
@@ -127,7 +127,7 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(30, 317);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 20);
+            this.label7.Size = new System.Drawing.Size(84, 16);
             this.label7.TabIndex = 32;
             this.label7.Text = "UNIQUE ID";
             // 
@@ -138,7 +138,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(30, 357);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(134, 20);
+            this.label8.Size = new System.Drawing.Size(110, 16);
             this.label8.TabIndex = 33;
             this.label8.Text = "DESIGNATION";
             // 
@@ -149,118 +149,131 @@
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(30, 396);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(174, 20);
+            this.label9.Size = new System.Drawing.Size(143, 16);
             this.label9.TabIndex = 34;
             this.label9.Text = "WORKING STATUS";
             // 
-            // textBox1
+            // txtMobile
             // 
-            this.textBox1.Location = new System.Drawing.Point(232, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(323, 22);
-            this.textBox1.TabIndex = 35;
+            this.txtMobile.Location = new System.Drawing.Point(232, 56);
+            this.txtMobile.Name = "txtMobile";
+            this.txtMobile.Size = new System.Drawing.Size(323, 22);
+            this.txtMobile.TabIndex = 35;
             // 
-            // textBox2
+            // txtName
             // 
-            this.textBox2.Location = new System.Drawing.Point(232, 101);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(535, 22);
-            this.textBox2.TabIndex = 36;
+            this.txtName.Location = new System.Drawing.Point(232, 101);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(535, 22);
+            this.txtName.TabIndex = 36;
+            this.txtName.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
+            // txtFather
             // 
-            this.textBox3.Location = new System.Drawing.Point(232, 142);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(535, 22);
-            this.textBox3.TabIndex = 37;
+            this.txtFather.Location = new System.Drawing.Point(232, 142);
+            this.txtFather.Name = "txtFather";
+            this.txtFather.Size = new System.Drawing.Size(535, 22);
+            this.txtFather.TabIndex = 37;
             // 
-            // textBox4
+            // txtMother
             // 
-            this.textBox4.Location = new System.Drawing.Point(232, 183);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(535, 22);
-            this.textBox4.TabIndex = 38;
+            this.txtMother.Location = new System.Drawing.Point(232, 183);
+            this.txtMother.Name = "txtMother";
+            this.txtMother.Size = new System.Drawing.Size(535, 22);
+            this.txtMother.TabIndex = 38;
             // 
-            // textBox5
+            // txtEmailId
             // 
-            this.textBox5.Location = new System.Drawing.Point(232, 228);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(535, 22);
-            this.textBox5.TabIndex = 39;
+            this.txtEmailId.Location = new System.Drawing.Point(232, 228);
+            this.txtEmailId.Name = "txtEmailId";
+            this.txtEmailId.Size = new System.Drawing.Size(535, 22);
+            this.txtEmailId.TabIndex = 39;
             // 
-            // textBox6
+            // txtPermanent
             // 
-            this.textBox6.Location = new System.Drawing.Point(232, 271);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(535, 22);
-            this.textBox6.TabIndex = 40;
+            this.txtPermanent.Location = new System.Drawing.Point(232, 271);
+            this.txtPermanent.Name = "txtPermanent";
+            this.txtPermanent.Size = new System.Drawing.Size(535, 22);
+            this.txtPermanent.TabIndex = 40;
             // 
-            // textBox7
+            // txtUnique
             // 
-            this.textBox7.Location = new System.Drawing.Point(232, 314);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(535, 22);
-            this.textBox7.TabIndex = 41;
+            this.txtUnique.Location = new System.Drawing.Point(232, 314);
+            this.txtUnique.Name = "txtUnique";
+            this.txtUnique.Size = new System.Drawing.Size(535, 22);
+            this.txtUnique.TabIndex = 41;
             // 
-            // comboBox1
+            // txtDesignation
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(232, 357);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(535, 24);
-            this.comboBox1.TabIndex = 42;
+            this.txtDesignation.FormattingEnabled = true;
+            this.txtDesignation.Items.AddRange(new object[] {
+            "Hostel Incharge ",
+            "Cleaning Staff",
+            "Mess Staff",
+            "Acounts manager"});
+            this.txtDesignation.Location = new System.Drawing.Point(232, 357);
+            this.txtDesignation.Name = "txtDesignation";
+            this.txtDesignation.Size = new System.Drawing.Size(535, 24);
+            this.txtDesignation.TabIndex = 42;
             // 
-            // comboBox2
+            // txtWorking
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(232, 393);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(150, 24);
-            this.comboBox2.TabIndex = 43;
+            this.txtWorking.FormattingEnabled = true;
+            this.txtWorking.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.txtWorking.Location = new System.Drawing.Point(232, 393);
+            this.txtWorking.Name = "txtWorking";
+            this.txtWorking.Size = new System.Drawing.Size(150, 24);
+            this.txtWorking.TabIndex = 43;
             // 
-            // button1
+            // btnSearch
             // 
-            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(580, 52);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 30);
-            this.button1.TabIndex = 44;
-            this.button1.Text = "SEARCH";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSearch.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(580, 52);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(118, 30);
+            this.btnSearch.TabIndex = 44;
+            this.btnSearch.Text = "SEARCH";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // button2
+            // btnClear
             // 
-            this.button2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(649, 389);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(118, 30);
-            this.button2.TabIndex = 45;
-            this.button2.Text = "CLEAR";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnClear.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(649, 389);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(118, 30);
+            this.btnClear.TabIndex = 45;
+            this.btnClear.Text = "CLEAR";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // button3
+            // btnDelete
             // 
-            this.button3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(525, 389);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(118, 30);
-            this.button3.TabIndex = 46;
-            this.button3.Text = "DELETE";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnDelete.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(525, 389);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(118, 30);
+            this.btnDelete.TabIndex = 46;
+            this.btnDelete.Text = "DELETE";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // button4
+            // btnUpdate
             // 
-            this.button4.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(401, 389);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(118, 30);
-            this.button4.TabIndex = 47;
-            this.button4.Text = "UPDATE";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnUpdate.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Location = new System.Drawing.Point(401, 389);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(118, 30);
+            this.btnUpdate.TabIndex = 47;
+            this.btnUpdate.Text = "UPDATE";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // label10
             // 
@@ -269,7 +282,7 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(269, 22);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 20);
+            this.label10.Size = new System.Drawing.Size(0, 16);
             this.label10.TabIndex = 48;
             // 
             // label11
@@ -279,7 +292,7 @@
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(227, 13);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(531, 32);
+            this.label11.Size = new System.Drawing.Size(425, 26);
             this.label11.TabIndex = 49;
             this.label11.Text = "EMPLOYEE DETAILS MODIFICATION";
             // 
@@ -291,19 +304,19 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtWorking);
+            this.Controls.Add(this.txtDesignation);
+            this.Controls.Add(this.txtUnique);
+            this.Controls.Add(this.txtPermanent);
+            this.Controls.Add(this.txtEmailId);
+            this.Controls.Add(this.txtMother);
+            this.Controls.Add(this.txtFather);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.txtMobile);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -315,6 +328,7 @@
             this.Controls.Add(this.label2);
             this.Name = "Form11";
             this.Text = "Form11";
+            this.Load += new System.EventHandler(this.Form11_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,19 +345,19 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox txtMobile;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtFather;
+        private System.Windows.Forms.TextBox txtMother;
+        private System.Windows.Forms.TextBox txtEmailId;
+        private System.Windows.Forms.TextBox txtPermanent;
+        private System.Windows.Forms.TextBox txtUnique;
+        private System.Windows.Forms.ComboBox txtDesignation;
+        private System.Windows.Forms.ComboBox txtWorking;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
     }

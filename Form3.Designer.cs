@@ -222,6 +222,7 @@
             this.button7.TabIndex = 8;
             this.button7.Text = "New Employee";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -237,6 +238,7 @@
             this.button8.TabIndex = 9;
             this.button8.Text = "Update / Delete Employee";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
