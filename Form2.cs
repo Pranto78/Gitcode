@@ -22,23 +22,15 @@ namespace Form_1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //string connectionString = @"Data Source=DESKTOP-TD5FI3C\SQLEXPRESS;Initial Catalog=Hostel_Mange;Integrated Security=True";
+            
             string connectionString= ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
 
-            //hugrghr
+            
             
 
 
 
-            // SqlConnection conn = new SqlConnection(connectionString);
-            //conn.Open();
-            //string query = "select * from Hostel_signup ";
-            // SqlCommand cmd = new SqlCommand(query, conn);
-
-            /*SqlDataAdapter adp = new SqlDataAdapter(cmd);
-            DataSet ds = new DataSet();
-            adp.Fill(ds);
-            DataTable dt = ds.Tables[0];*/
+            
 
             string name = nametxt.Text;
             string email = emailtxt.Text;
@@ -46,8 +38,7 @@ namespace Form_1
             string dob = datetxt.Value.ToString("yyyy-MM-dd"); // Format the DateTimePicker value
             string gender = mtxt.Checked ? "Male" : "Female";
 
-           // string query = "INSERT INTO Hostel_signup (Name, Email, Password, DOB, Gender) VALUES (@Name, @Email, @Password, @DOB, @Gender)";
-
+         
             
 
             using (SqlConnection conn = new SqlConnection(connectionString))
