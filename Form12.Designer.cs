@@ -35,15 +35,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtMNum = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtDesignation = new System.Windows.Forms.TextBox();
+            this.txtPayment = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.MonthDateTime = new System.Windows.Forms.DateTimePicker();
+            this.btnPaySalary = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -52,9 +52,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(227, 13);
+            this.label1.Location = new System.Drawing.Point(170, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(461, 32);
+            this.label1.Size = new System.Drawing.Size(369, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "EMPLOYEE PAYMENT DETAILS";
             // 
@@ -62,9 +63,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(30, 62);
+            this.label2.Location = new System.Drawing.Point(22, 50);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(164, 20);
+            this.label2.Size = new System.Drawing.Size(135, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "MOBILE NUMBER";
             // 
@@ -72,9 +74,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 99);
+            this.label3.Location = new System.Drawing.Point(22, 80);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 20);
+            this.label3.Size = new System.Drawing.Size(51, 17);
             this.label3.TabIndex = 1;
             this.label3.Text = "NAME";
             // 
@@ -82,9 +85,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(30, 137);
+            this.label4.Location = new System.Drawing.Point(22, 111);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 20);
+            this.label4.Size = new System.Drawing.Size(73, 17);
             this.label4.TabIndex = 1;
             this.label4.Text = "EMAIL ID";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -93,9 +97,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(30, 179);
+            this.label5.Location = new System.Drawing.Point(22, 145);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(134, 20);
+            this.label5.Size = new System.Drawing.Size(113, 17);
             this.label5.TabIndex = 1;
             this.label5.Text = "DESIGNATION";
             // 
@@ -103,9 +108,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(30, 214);
+            this.label6.Location = new System.Drawing.Point(22, 174);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 20);
+            this.label6.Size = new System.Drawing.Size(64, 17);
             this.label6.TabIndex = 1;
             this.label6.Text = "MONTH";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -114,113 +120,127 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(30, 252);
+            this.label7.Location = new System.Drawing.Point(22, 205);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(179, 20);
+            this.label7.Size = new System.Drawing.Size(152, 17);
             this.label7.TabIndex = 1;
             this.label7.Text = "PAYMENT AMOUNT";
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(233, 99);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(535, 22);
-            this.textBox1.TabIndex = 2;
+            this.txtName.Location = new System.Drawing.Point(175, 80);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(402, 20);
+            this.txtName.TabIndex = 2;
             // 
-            // textBox2
+            // txtMNum
             // 
-            this.textBox2.Location = new System.Drawing.Point(233, 60);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(323, 22);
-            this.textBox2.TabIndex = 36;
+            this.txtMNum.Location = new System.Drawing.Point(175, 49);
+            this.txtMNum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMNum.Name = "txtMNum";
+            this.txtMNum.Size = new System.Drawing.Size(243, 20);
+            this.txtMNum.TabIndex = 36;
             // 
-            // textBox3
+            // txtEmail
             // 
-            this.textBox3.Location = new System.Drawing.Point(233, 135);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(535, 22);
-            this.textBox3.TabIndex = 2;
+            this.txtEmail.Location = new System.Drawing.Point(175, 110);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(402, 20);
+            this.txtEmail.TabIndex = 2;
             // 
-            // textBox4
+            // txtDesignation
             // 
-            this.textBox4.Location = new System.Drawing.Point(233, 177);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(535, 22);
-            this.textBox4.TabIndex = 2;
+            this.txtDesignation.Location = new System.Drawing.Point(175, 144);
+            this.txtDesignation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDesignation.Name = "txtDesignation";
+            this.txtDesignation.Size = new System.Drawing.Size(402, 20);
+            this.txtDesignation.TabIndex = 2;
             // 
-            // textBox6
+            // txtPayment
             // 
-            this.textBox6.Location = new System.Drawing.Point(233, 250);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(229, 22);
-            this.textBox6.TabIndex = 2;
+            this.txtPayment.Location = new System.Drawing.Point(175, 203);
+            this.txtPayment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPayment.Name = "txtPayment";
+            this.txtPayment.Size = new System.Drawing.Size(173, 20);
+            this.txtPayment.TabIndex = 2;
             // 
-            // button1
+            // btnSearch
             // 
-            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(570, 55);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 30);
-            this.button1.TabIndex = 45;
-            this.button1.Text = "SEARCH";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSearch.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(428, 45);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(88, 24);
+            this.btnSearch.TabIndex = 45;
+            this.btnSearch.Text = "SEARCH";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // dateTimePicker1
+            // MonthDateTime
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(233, 214);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(535, 22);
-            this.dateTimePicker1.TabIndex = 46;
+            this.MonthDateTime.Location = new System.Drawing.Point(175, 174);
+            this.MonthDateTime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MonthDateTime.Name = "MonthDateTime";
+            this.MonthDateTime.Size = new System.Drawing.Size(402, 20);
+            this.MonthDateTime.TabIndex = 46;
             // 
-            // button2
+            // btnPaySalary
             // 
-            this.button2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(481, 247);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(144, 30);
-            this.button2.TabIndex = 47;
-            this.button2.Text = "PAY SALARY";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnPaySalary.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnPaySalary.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPaySalary.Location = new System.Drawing.Point(361, 201);
+            this.btnPaySalary.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPaySalary.Name = "btnPaySalary";
+            this.btnPaySalary.Size = new System.Drawing.Size(108, 24);
+            this.btnPaySalary.TabIndex = 47;
+            this.btnPaySalary.Text = "PAY SALARY";
+            this.btnPaySalary.UseVisualStyleBackColor = false;
+            this.btnPaySalary.Click += new System.EventHandler(this.btnPaySalary_Click);
             // 
-            // button3
+            // btnClear
             // 
-            this.button3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(650, 247);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(118, 30);
-            this.button3.TabIndex = 48;
-            this.button3.Text = "CLEAR";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnClear.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(488, 201);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(88, 24);
+            this.btnClear.TabIndex = 48;
+            this.btnClear.Text = "CLEAR";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 288);
+            this.dataGridView1.Location = new System.Drawing.Point(26, 234);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(734, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(550, 122);
             this.dataGridView1.TabIndex = 49;
             // 
             // Form12
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnPaySalary);
+            this.Controls.Add(this.MonthDateTime);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtMNum);
+            this.Controls.Add(this.txtPayment);
+            this.Controls.Add(this.txtDesignation);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -228,8 +248,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form12";
             this.Text = "Form12";
+            this.Load += new System.EventHandler(this.Form12_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -245,15 +267,15 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtMNum;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtDesignation;
+        private System.Windows.Forms.TextBox txtPayment;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.DateTimePicker MonthDateTime;
+        private System.Windows.Forms.Button btnPaySalary;
+        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
