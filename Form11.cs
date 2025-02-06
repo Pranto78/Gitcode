@@ -72,6 +72,8 @@ namespace Form_1
             query = "update newEmployee set ename = '" + name + "',efname='" + fname + "',emname='" + mname + "',email='" + email + "',eaddress='" + paddress + "',eidproof='" + id + "',designation='" + designation + "',working ='" + working + "' where emobile =" + mobile + "";
             fn.setData(query, "Date Updation Successfully");
 
+            clearAll();
+
             
         }
 

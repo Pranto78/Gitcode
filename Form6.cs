@@ -42,6 +42,7 @@ namespace Form_1
             txtPermanent.Clear();
             txtCollege.Clear();
             txtIdproof.Clear();
+            txtRoomNo.Clear();
             comboBoxLiving.SelectedIndex = -1;
         }
 
@@ -90,6 +91,8 @@ namespace Form_1
 
             query = "update newStudent set name ='" + name + "',fname ='" + fname + "',mname ='" + mname + "',email ='" + email + "',paddress ='" + paddress + "',college ='" + college + "',idproof ='" + idproof + "',Room_No =" + roomNo + ",living ='" + livingStatus + "'where mobile = " + mobile + " update New_Room set Room_Booked = '" +livingStatus+"' where Room_No="+roomNo+" ";
             fn.setData(query ,  "Data Updation Successful");
+
+            clearAll() ;
         }
 
         private void button1_Click(object sender, EventArgs e)
