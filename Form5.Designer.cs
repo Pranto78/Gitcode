@@ -152,66 +152,74 @@
             // 
             // txtMobile
             // 
+            this.txtMobile.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMobile.Location = new System.Drawing.Point(200, 28);
             this.txtMobile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMobile.Name = "txtMobile";
-            this.txtMobile.Size = new System.Drawing.Size(387, 20);
+            this.txtMobile.Size = new System.Drawing.Size(387, 21);
             this.txtMobile.TabIndex = 9;
             // 
             // txtName
             // 
+            this.txtName.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(200, 67);
             this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(387, 20);
+            this.txtName.Size = new System.Drawing.Size(387, 21);
             this.txtName.TabIndex = 10;
             // 
             // txtFather
             // 
+            this.txtFather.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFather.Location = new System.Drawing.Point(200, 107);
             this.txtFather.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtFather.Name = "txtFather";
-            this.txtFather.Size = new System.Drawing.Size(387, 20);
+            this.txtFather.Size = new System.Drawing.Size(387, 21);
             this.txtFather.TabIndex = 11;
             // 
             // txtMother
             // 
+            this.txtMother.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMother.Location = new System.Drawing.Point(200, 142);
             this.txtMother.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMother.Name = "txtMother";
-            this.txtMother.Size = new System.Drawing.Size(387, 20);
+            this.txtMother.Size = new System.Drawing.Size(387, 21);
             this.txtMother.TabIndex = 12;
             // 
             // txtEmail
             // 
+            this.txtEmail.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(200, 181);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(387, 20);
+            this.txtEmail.Size = new System.Drawing.Size(387, 21);
             this.txtEmail.TabIndex = 13;
             // 
             // txtPermanent
             // 
+            this.txtPermanent.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPermanent.Location = new System.Drawing.Point(200, 221);
             this.txtPermanent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPermanent.Name = "txtPermanent";
-            this.txtPermanent.Size = new System.Drawing.Size(387, 20);
+            this.txtPermanent.Size = new System.Drawing.Size(387, 21);
             this.txtPermanent.TabIndex = 14;
             // 
             // txtCollege
             // 
+            this.txtCollege.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCollege.Location = new System.Drawing.Point(200, 262);
             this.txtCollege.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCollege.Name = "txtCollege";
-            this.txtCollege.Size = new System.Drawing.Size(387, 20);
+            this.txtCollege.Size = new System.Drawing.Size(387, 21);
             this.txtCollege.TabIndex = 15;
             // 
             // txtId
             // 
+            this.txtId.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.Location = new System.Drawing.Point(200, 301);
             this.txtId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(387, 20);
+            this.txtId.Size = new System.Drawing.Size(387, 21);
             this.txtId.TabIndex = 16;
             // 
             // cmbBoxRoomNumber

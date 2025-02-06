@@ -246,9 +246,8 @@
             this.Labelroomexist.Location = new System.Drawing.Point(207, 126);
             this.Labelroomexist.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Labelroomexist.Name = "Labelroomexist";
-            this.Labelroomexist.Size = new System.Drawing.Size(58, 17);
+            this.Labelroomexist.Size = new System.Drawing.Size(0, 17);
             this.Labelroomexist.TabIndex = 16;
-            this.Labelroomexist.Text = "setText";
             // 
             // Labelroom
             // 
@@ -258,9 +257,8 @@
             this.Labelroom.Location = new System.Drawing.Point(190, 243);
             this.Labelroom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Labelroom.Name = "Labelroom";
-            this.Labelroom.Size = new System.Drawing.Size(58, 17);
+            this.Labelroom.Size = new System.Drawing.Size(0, 17);
             this.Labelroom.TabIndex = 17;
-            this.Labelroom.Text = "setText";
             // 
             // pictureBox1
             // 

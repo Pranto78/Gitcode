@@ -158,77 +158,86 @@ namespace Form_1
             // 
             // txtMobile
             // 
+            this.txtMobile.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMobile.Location = new System.Drawing.Point(206, 20);
             this.txtMobile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMobile.Name = "txtMobile";
-            this.txtMobile.Size = new System.Drawing.Size(167, 20);
+            this.txtMobile.Size = new System.Drawing.Size(167, 21);
             this.txtMobile.TabIndex = 10;
             // 
             // txtName
             // 
+            this.txtName.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(206, 51);
             this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(288, 20);
+            this.txtName.Size = new System.Drawing.Size(288, 21);
             this.txtName.TabIndex = 11;
             // 
             // txtFather
             // 
+            this.txtFather.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFather.Location = new System.Drawing.Point(206, 81);
             this.txtFather.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtFather.Name = "txtFather";
-            this.txtFather.Size = new System.Drawing.Size(288, 20);
+            this.txtFather.Size = new System.Drawing.Size(288, 21);
             this.txtFather.TabIndex = 12;
             this.txtFather.TextChanged += new System.EventHandler(this.txtFather_TextChanged);
             // 
             // txtMother
             // 
+            this.txtMother.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMother.Location = new System.Drawing.Point(206, 115);
             this.txtMother.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMother.Name = "txtMother";
-            this.txtMother.Size = new System.Drawing.Size(288, 20);
+            this.txtMother.Size = new System.Drawing.Size(288, 21);
             this.txtMother.TabIndex = 13;
             this.txtMother.TextChanged += new System.EventHandler(this.txtMother_TextChanged);
             // 
             // txtEmail
             // 
+            this.txtEmail.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(206, 148);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(288, 20);
+            this.txtEmail.Size = new System.Drawing.Size(288, 21);
             this.txtEmail.TabIndex = 14;
             // 
             // txtPermanent
             // 
+            this.txtPermanent.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPermanent.Location = new System.Drawing.Point(206, 180);
             this.txtPermanent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPermanent.Name = "txtPermanent";
-            this.txtPermanent.Size = new System.Drawing.Size(288, 20);
+            this.txtPermanent.Size = new System.Drawing.Size(288, 21);
             this.txtPermanent.TabIndex = 15;
             // 
             // txtCollege
             // 
+            this.txtCollege.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCollege.Location = new System.Drawing.Point(206, 210);
             this.txtCollege.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCollege.Name = "txtCollege";
-            this.txtCollege.Size = new System.Drawing.Size(288, 20);
+            this.txtCollege.Size = new System.Drawing.Size(288, 21);
             this.txtCollege.TabIndex = 16;
             // 
             // txtIdproof
             // 
+            this.txtIdproof.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdproof.Location = new System.Drawing.Point(206, 240);
             this.txtIdproof.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtIdproof.Name = "txtIdproof";
-            this.txtIdproof.Size = new System.Drawing.Size(288, 20);
+            this.txtIdproof.Size = new System.Drawing.Size(288, 21);
             this.txtIdproof.TabIndex = 17;
             this.txtIdproof.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // txtRoomNo
             // 
+            this.txtRoomNo.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRoomNo.Location = new System.Drawing.Point(206, 270);
             this.txtRoomNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtRoomNo.Name = "txtRoomNo";
-            this.txtRoomNo.Size = new System.Drawing.Size(288, 20);
+            this.txtRoomNo.Size = new System.Drawing.Size(288, 21);
             this.txtRoomNo.TabIndex = 18;
             // 
             // btnUpdate

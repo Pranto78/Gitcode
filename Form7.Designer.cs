@@ -50,34 +50,38 @@
             // 
             // txtMobile
             // 
+            this.txtMobile.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMobile.Location = new System.Drawing.Point(168, 40);
             this.txtMobile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMobile.Name = "txtMobile";
-            this.txtMobile.Size = new System.Drawing.Size(266, 20);
+            this.txtMobile.Size = new System.Drawing.Size(266, 21);
             this.txtMobile.TabIndex = 11;
             // 
             // txtName
             // 
+            this.txtName.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(168, 71);
             this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(381, 20);
+            this.txtName.Size = new System.Drawing.Size(381, 21);
             this.txtName.TabIndex = 12;
             // 
             // txtEmailId
             // 
+            this.txtEmailId.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailId.Location = new System.Drawing.Point(168, 100);
             this.txtEmailId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmailId.Name = "txtEmailId";
-            this.txtEmailId.Size = new System.Drawing.Size(381, 20);
+            this.txtEmailId.Size = new System.Drawing.Size(381, 21);
             this.txtEmailId.TabIndex = 13;
             // 
             // txtRoomNo
             // 
+            this.txtRoomNo.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRoomNo.Location = new System.Drawing.Point(168, 132);
             this.txtRoomNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtRoomNo.Name = "txtRoomNo";
-            this.txtRoomNo.Size = new System.Drawing.Size(381, 20);
+            this.txtRoomNo.Size = new System.Drawing.Size(381, 21);
             this.txtRoomNo.TabIndex = 14;
             this.txtRoomNo.TextChanged += new System.EventHandler(this.txtRoomNo_TextChanged);
             // 

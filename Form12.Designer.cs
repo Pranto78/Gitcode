@@ -130,6 +130,7 @@
             // 
             // txtName
             // 
+            this.txtName.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(175, 80);
             this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtName.Name = "txtName";
@@ -138,14 +139,16 @@
             // 
             // txtMNum
             // 
+            this.txtMNum.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMNum.Location = new System.Drawing.Point(175, 49);
             this.txtMNum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMNum.Name = "txtMNum";
-            this.txtMNum.Size = new System.Drawing.Size(243, 20);
+            this.txtMNum.Size = new System.Drawing.Size(243, 21);
             this.txtMNum.TabIndex = 36;
             // 
             // txtEmail
             // 
+            this.txtEmail.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(175, 110);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmail.Name = "txtEmail";
@@ -154,6 +157,7 @@
             // 
             // txtDesignation
             // 
+            this.txtDesignation.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDesignation.Location = new System.Drawing.Point(175, 144);
             this.txtDesignation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDesignation.Name = "txtDesignation";
